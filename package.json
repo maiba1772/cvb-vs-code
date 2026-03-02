@@ -1,0 +1,47 @@
+{
+  "name": "cvb-language",
+  "displayName": "CVB Language",
+  "description": "CVB 编程语言语法高亮支持",
+  "version": "1.0.0",
+  "publisher": "cvb-lang",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "cvb",
+        "aliases": [
+          "CVB",
+          "cvb"
+        ],
+        "extensions": [
+          ".cvb"
+        ],
+        "configuration": "./cvb-language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cvb",
+        "scopeName": "source.cvb",
+        "path": "./cvb.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cvb-lang/cvb-vscode"
+  },
+  "keywords": [
+    "cvb",
+    "language",
+    "syntax",
+    "highlighting"
+  ],
+  "icon": "images/icon.png",
+  "license": "MIT"
+}
